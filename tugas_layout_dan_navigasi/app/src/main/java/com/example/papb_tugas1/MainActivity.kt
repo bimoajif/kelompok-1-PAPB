@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
         Timber.plant(Timber.DebugTree())
         Timber.i("onCreate Called")
+        Toast.makeText(applicationContext,"onCreate Called",Toast.LENGTH_LONG).show()
     }
 
     override fun onStart() {
@@ -33,7 +34,6 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
 
         Timber.i("onPause Called")
-        Toast.makeText(applicationContext,"onPause Called",Toast.LENGTH_LONG).show()
     }
 
     override fun onStop() {
