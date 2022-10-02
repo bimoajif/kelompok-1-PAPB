@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
     }
 
+
     override fun onDestroy() {
         super.onDestroy()
     }
