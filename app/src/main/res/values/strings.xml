@@ -15,4 +15,16 @@
     <string name="title_activity_profile">ProfileActivity</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
+    <string name="title_activity_landing">LandingActivity</string>
+    
+    <string name="tinggi_badan">Tinggi Badan(cm)</string>
+    <string name="berat_badan">Berat Badan(kg)</string>
+    <string name="usia">Usia</string>
+    <string name="start_use_app">MULAI GUNAKAN APLIKASI</string>
+    <string name="hint_height">160</string>
+    <string name="hint_weight">65</string>
+    <string name="hint_age">25</string>
+
+    <string name="landing_welcome">SELAMAT DATANG</string>
+    <string name="sub_landing_welcome">Masukkan tinggi badan, berat badan, dan usia untuk memulai penggunaan aplikasi</string>
 </resources>
