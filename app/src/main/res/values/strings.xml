@@ -27,4 +27,9 @@
 
     <string name="landing_welcome">SELAMAT DATANG</string>
     <string name="sub_landing_welcome">Masukkan tinggi badan, berat badan, dan usia untuk memulai penggunaan aplikasi</string>
+    <string name="input_height">Input Height</string>
+    <string name="masukkan_tinggi_badan">Masukkan Tinggi Badan</string>
+    <string name="masukkan_berat_badan">Masukkan Berat Badan</string>
+    <string name="masukkan_usia">Masukkan Usia</string>
+    <string name="ubah_data">UBAH DATA</string>
 </resources>
