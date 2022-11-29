@@ -3,6 +3,7 @@ package com.example.diettrackerapp
 import android.content.res.ColorStateList
 import android.graphics.Color
 import android.os.Bundle
+import android.view.Gravity
 import android.view.Menu
 import android.view.View
 import com.google.android.material.snackbar.Snackbar
@@ -49,7 +50,7 @@ class MainActivity : AppCompatActivity() {
 
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
-        if (navView.equals(R.id.nav_diet_program)){
+        if (appBarConfiguration.toString() == "Program Diet"){
             fab.visibility = View.GONE
         }
     }

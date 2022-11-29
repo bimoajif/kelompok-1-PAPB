@@ -2,11 +2,14 @@ package com.example.diettrackerapp.ui.landing
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
+import com.example.diettrackerapp.database.UsersDao
+import com.example.diettrackerapp.database.UsersRepository
 
 class LandingViewModel(application: Application): AndroidViewModel(application) {
 //
-//    private val repository: UsersRepository
-//    private val userDao: UserDao
+    private lateinit var repository: UsersRepository
+    private lateinit var userDao: UsersDao
+
 //
 //    private var _users : LiveData<List<Users>>
 //

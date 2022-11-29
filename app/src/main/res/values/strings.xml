@@ -16,7 +16,7 @@
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
     <string name="title_activity_landing">LandingActivity</string>
-    
+
     <string name="tinggi_badan">Tinggi Badan(cm)</string>
     <string name="berat_badan">Berat Badan(kg)</string>
     <string name="usia">Usia</string>

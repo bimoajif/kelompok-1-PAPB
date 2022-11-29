@@ -44,12 +44,12 @@
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
             android:text="@string/berat_badan"
-            app:layout_constraintBottom_toTopOf="@+id/widthInput"
+            app:layout_constraintBottom_toTopOf="@+id/widthUpdate"
             app:layout_constraintEnd_toEndOf="@+id/heightInput"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/widthInput"
+            android:id="@+id/widthUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -73,12 +73,12 @@
             android:layout_marginStart="40dp"
             android:layout_marginEnd="40dp"
             android:text="@string/usia"
-            app:layout_constraintBottom_toTopOf="@+id/ageInput"
+            app:layout_constraintBottom_toTopOf="@+id/ageUpdate"
             app:layout_constraintEnd_toEndOf="@+id/heightInput"
             app:layout_constraintStart_toStartOf="parent" />
 
         <EditText
-            android:id="@+id/ageInput"
+            android:id="@+id/ageUpdate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
@@ -93,7 +93,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/widthInput" />
+            app:layout_constraintTop_toBottomOf="@+id/widthUpdate" />
 
         <Button
             android:id="@+id/btnUpdate"
@@ -102,8 +102,8 @@
             android:layout_marginTop="40dp"
             android:text="@string/ubah_data"
             android:textColor="#000000"
-            app:layout_constraintEnd_toEndOf="@+id/ageInput"
-            app:layout_constraintTop_toBottomOf="@+id/ageInput" />
+            app:layout_constraintEnd_toEndOf="@+id/ageUpdate"
+            app:layout_constraintTop_toBottomOf="@+id/ageUpdate" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

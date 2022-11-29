@@ -6,17 +6,100 @@
     android:layout_height="match_parent"
     tools:context=".ui.slideshow.SlideshowFragment">
 
-    <TextView
-        android:id="@+id/text_slideshow"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+<!--    <TextView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:text="@string/tinggi_badan"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/heightUpdate"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/heightUpdate"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/heightUpdate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="50dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:background="@drawable/et_style"-->
+<!--        android:hint="@string/masukkan_tinggi_badan"-->
+<!--        android:inputType="number"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColorHint="#757575"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:text="@string/berat_badan"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/widthUpdate"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/heightUpdate"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/widthUpdate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:background="@drawable/et_style"-->
+<!--        android:hint="@string/masukkan_berat_badan"-->
+<!--        android:inputType="number"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColorHint="#757575"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="1.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/heightUpdate" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView3"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:text="@string/usia"-->
+<!--        app:layout_constraintBottom_toTopOf="@+id/ageUpdate"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/heightUpdate"-->
+<!--        app:layout_constraintStart_toStartOf="parent" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/ageUpdate"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="40dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="40dp"-->
+<!--        android:background="@drawable/et_style"-->
+<!--        android:hint="@string/masukkan_usia"-->
+<!--        android:inputType="number"-->
+<!--        android:minHeight="48dp"-->
+<!--        android:padding="10dp"-->
+<!--        android:textColorHint="#757575"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/widthUpdate" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/btnUpdate"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="@string/ubah_data"-->
+<!--        android:textColor="#000000"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/ageUpdate"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/ageUpdate" />-->
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

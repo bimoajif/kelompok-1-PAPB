@@ -60,14 +60,14 @@ class LandingActivity : AppCompatActivity() {
                 editHeight.setText(user1.height.toString())
                 editWidth.setText(user1.width.toString())
                 editAge.setText(user1.age.toString())
-                updateTheNote()
+                updateUser()
             } else {
                 setUpListener()
             }
         }
     }
 
-    private fun updateTheNote() {
+    private fun updateUser() {
         buttonStart.setOnClickListener {
             CoroutineScope(Dispatchers.IO).launch {
                 db.userDao().updateUser(
