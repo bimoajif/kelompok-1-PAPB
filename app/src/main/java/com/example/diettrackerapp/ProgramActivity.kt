@@ -5,20 +5,20 @@ import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import com.google.android.material.snackbar.Snackbar
-import com.google.android.material.navigation.NavigationView
+import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.navigateUp
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import androidx.drawerlayout.widget.DrawerLayout
-import androidx.appcompat.app.AppCompatActivity
-import androidx.appcompat.view.menu.MenuView.ItemView
-import androidx.navigation.Navigation
+import com.example.diettrackerapp.R
 import com.example.diettrackerapp.databinding.ActivityMainBinding
+import com.example.diettrackerapp.databinding.ActivityProgramBinding
 import com.google.android.material.floatingactionbutton.FloatingActionButton
+import com.google.android.material.navigation.NavigationView
 
-class MainActivity : AppCompatActivity() {
+class ProgramActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
@@ -31,12 +31,6 @@ class MainActivity : AppCompatActivity() {
 
         setSupportActionBar(binding.appBarMain.toolbar)
 
-//        val fab = findViewById<FloatingActionButton>(R.id.fab)
-//        fab.imageTintList = ColorStateList.valueOf(Color.rgb(255,255,255))
-//
-//        binding.appBarMain.fab.setOnClickListener { view ->
-//            Navigation.findNavController(view).navigate(R.id.action_nav_home_to_addDataFragment)
-//        }
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
         val navController = findNavController(R.id.nav_host_fragment_content_main)
@@ -58,7 +52,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onSupportNavigateUp(): Boolean {
-        val navController = findNavController(R.id.nav_host_fragment_content_main)
+        val navController = findNavController(R.id.nav_host_fragment_content_program)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 }
