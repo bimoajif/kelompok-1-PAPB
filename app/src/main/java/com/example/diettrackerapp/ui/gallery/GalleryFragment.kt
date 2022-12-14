@@ -7,7 +7,10 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
+import com.example.diettrackerapp.R
+import com.example.diettrackerapp.databinding.ActivityMainBinding
 import com.example.diettrackerapp.databinding.FragmentGalleryBinding
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class GalleryFragment : Fragment() {
 
@@ -16,6 +19,8 @@ class GalleryFragment : Fragment() {
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
+
+    private lateinit var bindingMain: ActivityMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -28,10 +33,20 @@ class GalleryFragment : Fragment() {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
         val root: View = binding.root
 
-        val textView: TextView = binding.textGallery
-        galleryViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+        bindingMain = ActivityMainBinding.inflate(layoutInflater)
+
+        val fab = view?.findViewById<FloatingActionButton>(R.id.fab)
+        if (fab != null) {
+            fab.visibility = View.GONE
         }
+
+
+
+
+//        val textView: TextView = binding.root
+//        galleryViewModel.text.observe(viewLifecycleOwner) {
+//            textView.text = it
+//        }
         return root
     }
 

@@ -10,18 +10,11 @@ import androidx.room.Update
 
 @Dao
 interface DietDataDao {
-    @Insert(onConflict = OnConflictStrategy.IGNORE)
-    suspend fun insertProgram(dietprogram : DietData) : Long
-
-    @Update
-    suspend fun updateProgram(dietprogram : DietData) : Long
-
-    @Delete
-    suspend fun deleteProgram(dietprogram : DietData) : Long
-
-    @Query("DELETE FROM diet_tracker_table")
-    suspend fun deleteAllProgram()
-
     @Query("SELECT * FROM diet_tracker_table")
-    fun getAllProgram():LiveData<List<DietData>>
+    fun loadAllDietData(): List<DietData>
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertDietData(dietData: DietData)
+
+    @Update(onConflict = OnConflictStrategy.REPLACE)
+    fun updateDietData(dietData: DietData)
 }

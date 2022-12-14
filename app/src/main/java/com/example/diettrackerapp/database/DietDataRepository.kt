@@ -3,21 +3,12 @@ package com.example.diettrackerapp.database
 import androidx.lifecycle.LiveData
 
 class DietDataRepository(private val dao : DietDataDao) {
-    val allPrograms: LiveData<List<DietData>> = dao.getAllProgram()
+    val allDietData = dao.loadAllDietData()
 
-    suspend fun insert(dietData: DietData){
-        dao.insertProgram(dietData)
+    fun insert(dietData: DietData){
+        dao.insertDietData(dietData)
     }
-
-    suspend fun update(dietData: DietData){
-        dao.updateProgram(dietData)
-    }
-
-    suspend fun delete(dietData: DietData) {
-        dao.deleteProgram(dietData)
-    }
-
-    suspend fun deleteAll(dietData: DietData) {
-        dao.deleteAllProgram()
+    fun update(dietData: DietData) {
+        dao.updateDietData(dietData)
     }
 }

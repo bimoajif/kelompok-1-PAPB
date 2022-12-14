@@ -1,0 +1,52 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "e1de71da3c5b2884d1bae54052ca8885",
+    "entities": [
+      {
+        "tableName": "diet_tracker_table",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`diet_id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `eat_time` TEXT NOT NULL, `food_list` TEXT NOT NULL, `calories` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "dietId",
+            "columnName": "diet_id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eat_time",
+            "columnName": "eat_time",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "food_list",
+            "columnName": "food_list",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "calories",
+            "columnName": "calories",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "diet_id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      }
+    ],
+    "views": [],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'e1de71da3c5b2884d1bae54052ca8885')"
+    ]
+  }
+}

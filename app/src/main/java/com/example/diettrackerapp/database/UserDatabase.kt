@@ -5,20 +5,21 @@ import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 
-@Database(entities = [DietData::class], version = 1)
-abstract class DietDataDatabase : RoomDatabase() {
-    abstract val DietDataDao : DietDataDao
+@Database(entities = [Users::class], version = 1)
+abstract class UserDatabase : RoomDatabase() {
+
+    abstract fun userDao() : UsersDao
 
     companion object {
         @Volatile
-        private var INSTANCE : DietDataDatabase? = null
-        fun getInstance(context: Context):DietDataDatabase{
+        private var INSTANCE : UserDatabase? = null
+        fun getInstance(context: Context):UserDatabase{
             synchronized(this){
-                var instance:DietDataDatabase? = INSTANCE
+                var instance:UserDatabase? = INSTANCE
                 if (instance==null){
                     instance = Room.databaseBuilder(
                         context.applicationContext,
-                        DietDataDatabase::class.java,
+                        UserDatabase::class.java,
                         "userData_database"
                     ).build()
                 }
